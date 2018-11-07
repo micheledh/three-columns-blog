@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+.container {
+  width: 32%;
+  margin: 5px;
+  background-color: $contentBackgroundColor;
+}
+
+.articleImg {
+  width: 100%;
+}
+
+.articleTextContainer {
+  margin: 10px;
+}
+
+.articleTitle {
+  font-size: larger;
+}
+
+.articleBtn {
+  color: $white;
+  background-color: $articleBtnBackground;
+  padding: 10px 20px;
+  border-style: none;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

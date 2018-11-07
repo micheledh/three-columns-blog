@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.appHeader {
+  margin: 10px;
+}
+
+.logo {
+  height: 30px;
+  margin: 0 5px;
+}
+
+.articlesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: $mobilewidth) {
+  .articlesContainer {
+    flex-direction: column;
+  }
+}
